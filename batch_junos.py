@@ -22,7 +22,7 @@ except IndexError:
     print """Usage:
 batch_junos.py {--ip|--file} {IP_ADDR|FILE_PATH} {--cmd 'COMMAND'}
 
-example: 
+example:
 batch_junos.py --ip 192.168.1.1 --cmd 'show chassis hardware'
 batch_junos.py --file /tmp/ip_file.txt 'show interfaces'
        """
@@ -44,8 +44,7 @@ def Check_SSH(IP):
 
 # Paramiko connection
 ssh = paramiko.SSHClient()
-ssh.set_missing_host_key_policy(
-    paramiko.AutoAddPolicy())
+ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
 
 
 def run_cmd(device_ip, cmd, username, password):
