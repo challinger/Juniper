@@ -6,7 +6,7 @@ import sys
 import socket
 import pprint
 
-# Auth credentials
+# Authentication credentials
 username = 'juniper'
 password = 'juniper123'
 
